@@ -46,6 +46,7 @@
               gotools
               go-tools
               golangci-lint
+              codecrafters-cli
             ];
           };
         }
