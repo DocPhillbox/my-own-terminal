@@ -1,0 +1,26 @@
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  default: standard
+  enable:
+    - gocyclo
+    - gocognit
+    - errcheck
+    - ineffassign
+    - unused
+    - gosec
+    - unconvert
+    - misspell
+  settings:
+    gocyclo:
+      min-complexity: 15
+    gocognit:
+      min-complexity: 20
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
